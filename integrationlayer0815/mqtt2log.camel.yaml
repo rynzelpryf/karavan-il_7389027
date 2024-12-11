@@ -3,12 +3,11 @@
     nodePrefixId: route-045
     from:
       id: from-c454
+      description: MQTT Reveive
       uri: kamelet:mqtt5-source
       parameters:
-        password: "{{env:BROKER_PASSWORD}}"
-        username: "{{env:BROKER_USERNAME}}"
-        brokerUrl: f8b45d24e37740e28bc5b419b8584b25.s2.eu.hivemq.cloud:8883
-        topic: x4r/60dc835d-e0a6-4e6e-81de-0ef0420ccaee/DDATA
+        brokerUrl: meister-edge
+        topic: zigbee2mqtt/#
       steps:
         - to:
             id: to-8b2a
